@@ -1,0 +1,58 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  background-image: url(../img/patterns/classy_fabric.png);
+  background-repeat: repeat;
+  background-color: #262626;
+}
+
+body > .primary {
+  height: 100%;
+  padding: 0;
+}
+
+.primary > .row-fluid {
+  height: 100%;
+}
+
+.row-fluid > .sidebar {
+  float: left;
+  width: 33.9%;
+  height: 100%;
+  padding: 193px 4% 9px 0;
+  text-align: right;
+  background-image: url(../img/patterns/cartographer.png);
+  background-repeat: repeat;
+  background-color: #3e3e3e;
+}
+
+.row-fluid > .content {
+  float: left;
+  width: auto;
+}
+
+span.separator {
+  padding: 0 2px;
+}
+
+.sidebar h1 {
+  color: #fff;
+  font-size: 53px;
+  font-weight: bold;
+  font-family: Helmet, Freesans, sans-serif;
+  letter-spacing: -0.04em;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar h2 {
+  color: #FFDC7C;
+  font-family: "Droid Serif", "Georgia", "Times New Roman", "Palatino", "Hoefler Text", "Baskerville", serif;
+  font-style: italic;
+  text-shadow: none;
+  font-size: 12px;
+  line-height: 48px;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.3);
+}
