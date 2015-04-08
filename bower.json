@@ -2,6 +2,7 @@
   "name": "harrisnovick-com",
   "private": true,
   "dependencies": {
+    "basscss": "~5.2.1",
     "jquery": "~2.1.1",
     "modernizr": "~2.8.1"
   }
