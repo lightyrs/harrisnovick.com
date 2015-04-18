@@ -1,20 +1,11 @@
 doctype html
-// if IE 6
-  <html id="ie6" lang="en">
-// if IE 7
-  <html id="ie7" lang="en">
-// if IE 8
-  <html id="ie8" lang="en">
-// if IE 9
-  <html id="ie9" lang="en">
-// if[!IE]><!
 html(lang='en')
-  //<![endif]
   head
+    meta(charset='utf-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
-    title My Awesome App
-
+    title Harris Novick
+    meta(name='description', content='')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
     link(rel='stylesheet', href='stylesheets/app.css', type='text/css')
   body
     h1 Brunch-jade-stylus
@@ -27,4 +18,3 @@ html(lang='en')
     script(src='javascripts/app.js')
     script.
       require('initialize');
-

@@ -1,11 +1,13 @@
 exports.config =
   # See http://brunch.readthedocs.org/en/latest/config.html for documentation.
   plugins:
-    static_jade:
-      extension: ".static.jade"
     stylus:
       paths: [
         './app/assets/images',
+      ]
+      plugins: [
+        'typographic'
+        'lost-grid'
       ]
 
   files:
@@ -23,7 +25,7 @@ exports.config =
         'stylesheets/app.css': /^(app|vendor)/
         'test/stylesheets/test.css': /^test/
       order:
-        before: []
+        before: ['vendor/sanitize.css']
         after: []
 
     # Ensure that our jade templates don't get compiled into our app JS.
