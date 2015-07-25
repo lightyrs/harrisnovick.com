@@ -2,7 +2,7 @@
 app_path    = "/data/apps/harrisnovick.com/current"
 
 # Set the shared path for later reference.
-shared_path = "/data/app/harrisnovick.com/shared"
+shared_path = "/data/apps/harrisnovick.com/shared"
 
 # The number of worker processes you have here should equal the number of CPU
 # cores your server has.
