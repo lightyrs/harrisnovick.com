@@ -1,40 +1,32 @@
-set :application, 'my_app_name'
-set :repo_url, 'git@example.com:me/my_repo.git'
+set :application, 'harrisnovick.com'
 
-# ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
+set :rvm_type, :user
+set :assets_roles, [:web, :app]
 
-# set :deploy_to, '/var/www/my_app'
-# set :scm, :git
+set :scm,           :git
+set :copy_strategy, :checkout
+set :git_strategy,  Capistrano::Git::SubmoduleStrategy
+set :repo_url,      'git@github.com:lightyrs/harrisnovick.com.git'
+set :deploy_to,     '/data/apps/harrisnovick.com'
 
-# set :format, :pretty
-# set :log_level, :debug
-# set :pty, true
+set :ssh_options, {
+  keepalive: true,
+  forward_agent: true
+}
+set :use_sudo, true
+set :pty, false
 
-# set :linked_files, %w{config/database.yml}
-# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+set :linked_files, fetch(:linked_files, []).push('config/database.yml')
+set :linked_dirs,  fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system')
 
-# set :default_env, { path: "/opt/ruby/bin:$PATH" }
-# set :keep_releases, 5
+SSHKit.config.command_map[:rake]  = "bundle exec rake"
+SSHKit.config.command_map[:rails] = "bundle exec rails"
 
-namespace :deploy do
+set :log_level,       :debug
+set :keep_releases,   5
+set :bundle_binstubs, nil
 
-  desc 'Restart application'
-  task :restart do
-    on roles(:app), in: :sequence, wait: 5 do
-      # Your restart mechanism here, for example:
-      # execute :touch, release_path.join('tmp/restart.txt')
-    end
-  end
+set :default_env, { rvm_bin_path: '~/.rvm/bin' }
 
-  after :restart, :clear_cache do
-    on roles(:web), in: :groups, limit: 3, wait: 10 do
-      # Here we can do anything such as:
-      # within release_path do
-      #   execute :rake, 'cache:clear'
-      # end
-    end
-  end
-
-  after :finishing, 'deploy:cleanup'
-
-end
+after "deploy:finished", "deploy:restart"
+after "deploy:restart",  "deploy:cleanup"

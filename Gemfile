@@ -12,9 +12,10 @@ gem 'haml-rails', '~> 0.9.0'
 gem 'omniauth', '~> 1.2.2'
 gem 'omniauth-github', '~> 1.1.2'
 gem 'pg', '~> 0.18.2'
-gem 'puma', '~> 2.12.2'
+gem 'unicorn', '~> 4.9.0'
 gem 'simple_form', '~> 3.1.0'
 gem 'sidekiq', '~> 3.4.2'
+gem 'whenever', '~> 0.9.4'
 
 group :test do
   gem 'capybara', '~> 2.4.4'
