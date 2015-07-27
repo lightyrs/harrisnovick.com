@@ -16,6 +16,7 @@ gem 'unicorn', '~> 4.9.0'
 gem 'simple_form', '~> 3.1.0'
 gem 'sidekiq', '~> 3.4.2'
 gem 'whenever', '~> 0.9.4'
+gem 'puma'
 
 group :test do
   gem 'capybara', '~> 2.4.4'
