@@ -1,0 +1,9 @@
+// Typography
+
+html {
+  @include system-sans-serif();
+}
+
+body {
+  color: #495057;
+}

@@ -1,7 +1,52 @@
 doctype html
-html
+html(lang='en')
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
-    block content
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='Personal Homepage of Harris Novick')
+    meta(name='author', content='Harris Novick')
+    title Harris Novick
+    link(rel='stylesheet', href='stylesheets/bootstrap.css')
+    link(rel='stylesheet', href='stylesheets/app.css')
+body
+  .container
+    .header.clearfix
+      nav
+        ul.nav.nav-pills.float-xs-right
+          li.nav-item
+            a.nav-link.active(href='#')
+              | Home 
+              span.sr-only (current)
+          li.nav-item
+            a.nav-link(href='#') About
+          li.nav-item
+            a.nav-link(href='#') Contact
+      h3.text-muted Harris Novick
+    .jumbotron
+      h1.display-3 Jumbotron heading
+      p.lead
+        | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+      p
+        a.btn.btn-lg.btn-success(href='#', role='button') Sign up today
+    .row.marketing
+      .col-lg-6
+        h4 Subheading
+        p
+          | Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+        h4 Subheading
+        p
+          | Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
+        h4 Subheading
+        p Maecenas sed diam eget risus varius blandit sit amet non magna.
+      .col-lg-6
+        h4 Subheading
+        p
+          | Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+        h4 Subheading
+        p
+          | Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
+        h4 Subheading
+        p Maecenas sed diam eget risus varius blandit sit amet non magna.
+    footer.footer
+      p &copy; Harris Novick 2016
