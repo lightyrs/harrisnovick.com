@@ -1,3 +1,6 @@
+const Configstore = require('configstore');
+const conf = new Configstore('harrisnovick');
+
 var express = require('express');
 var sassMiddleware = require('node-sass-middleware');
 var path = require('path');

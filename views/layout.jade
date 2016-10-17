@@ -10,43 +10,30 @@ html(lang='en')
     link(rel='stylesheet', href='stylesheets/bootstrap.css')
     link(rel='stylesheet', href='stylesheets/app.css')
 body
-  .container
+  .container.squeeze
     .header.clearfix
-      nav
-        ul.nav.nav-pills.float-xs-right
-          li.nav-item
-            a.nav-link.active(href='#')
-              | Home 
-              span.sr-only (current)
-          li.nav-item
-            a.nav-link(href='#') About
-          li.nav-item
-            a.nav-link(href='#') Contact
-      h3.text-muted Harris Novick
-    .jumbotron
-      h1.display-3 Jumbotron heading
-      p.lead
-        | Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-      p
-        a.btn.btn-lg.btn-success(href='#', role='button') Sign up today
-    .row.marketing
+      h1.display-4 Harris Novick
+      h2.text-muted.lead Writing software, writing songs, building products and companies, meeting new people and learning new skills; staying interested and vital above most else.
+    .row
       .col-lg-6
-        h4 Subheading
-        p
-          | Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
-        h4 Subheading
-        p
-          | Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
-        h4 Subheading
-        p Maecenas sed diam eget risus varius blandit sit amet non magna.
+        section.twitter
+          h4 Twitter
+          block content
+        section.instagram
+          h4 Instagram
+          p.primary Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
+        section.lastfm
+          h4 Last.fm
+          p.primary Maecenas sed diam eget risus varius blandit sit amet non magna.
       .col-lg-6
-        h4 Subheading
-        p
-          | Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
-        h4 Subheading
-        p
-          | Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
-        h4 Subheading
-        p Maecenas sed diam eget risus varius blandit sit amet non magna.
+        section.github
+          h4 GitHub
+          p.primary Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+        section.youtube
+          h4 YouTube
+          p.primary Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
+        section.trakttv
+          h4 Trakt.tv
+          p.primary Maecenas sed diam eget risus varius blandit sit amet non magna.
     footer.footer
-      p &copy; Harris Novick 2016
+      p.text-muted &copy; Harris Novick 2016
