@@ -7,6 +7,7 @@ html(lang='en')
     meta(name='description', content='Personal Homepage of Harris Novick')
     meta(name='author', content='Harris Novick')
     title Harris Novick
+    link(href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700|Noto+Serif:400,400i&subset=latin-ext', rel='stylesheet')
     link(rel='stylesheet', href='stylesheets/bootstrap.css')
     link(rel='stylesheet', href='stylesheets/app.css')
 body
@@ -16,24 +17,23 @@ body
       h2.text-muted.lead Writing software, writing songs, building products and companies, meeting new people and learning new skills; staying interested and vital above most else.
     .row
       .col-lg-6
-        section.twitter
-          h4 Twitter
-          block content
+        section.quotation
+          block quotation
         section.instagram
           h4 Instagram
-          p.primary Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
+          block instagram
         section.lastfm
           h4 Last.fm
-          p.primary Maecenas sed diam eget risus varius blandit sit amet non magna.
+          block lastfm
       .col-lg-6
         section.github
           h4 GitHub
-          p.primary Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.
+          block github
         section.youtube
           h4 YouTube
-          p.primary Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.
+          block youtube
         section.trakttv
           h4 Trakt.tv
-          p.primary Maecenas sed diam eget risus varius blandit sit amet non magna.
+          block trakt
     footer.footer
       p.text-muted &copy; Harris Novick 2016

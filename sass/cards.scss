@@ -1,0 +1,60 @@
+// Cards
+
+.card {
+  @include serif();
+}
+
+.card-quotation {
+  background-color: $hero-blue;
+  color: white;
+  padding: 2.25rem 0 .5rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.card-quotation p {
+  text-align: center;
+  margin-bottom: 0;
+  padding: 2rem 2.25rem 0;
+}
+
+.card-quotation .symbol {
+  font-size: 6rem;
+  font-weight: bold;
+  margin: 57px 0 25px;
+  text-align: center;
+}
+
+.card-quotation header {
+  text-align: center;
+  line-height: 16px;
+
+  cite {
+    @include sans-serif();
+    font-weight: bold;
+    color: white;
+    display: block;
+    font-style: normal;
+    font-size: 16px;
+  }
+
+  small {
+    @include serif();
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+    font-size: 13px;
+  }
+}
+
+.card-quotation footer {
+  width: 85%;
+  margin: 0 auto;
+  padding: .25rem 0 0;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.2);
+  border-width: 1px 0 0 0;
+  @include sans-serif();
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+  text-align: center;
+}

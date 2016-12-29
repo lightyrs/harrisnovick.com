@@ -15,6 +15,10 @@
                sans-serif; /* Everything else */
 }
 
-.system-sans-serif {
-  @include system-sans-serif();
+@mixin sans-serif {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+@mixin serif {
+  font-family: 'Noto Serif', serif;
 }

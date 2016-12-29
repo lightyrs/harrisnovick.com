@@ -1,4 +1,14 @@
 extends layout
 
-block content
-  p.primary #{tweet}
+block quotation
+  .card.card-block.card-quotation
+    blockquote.card-blockquote
+      header
+        cite(author='Green Lantern') Green Lantern
+        small Chief Redactor
+      p #{quotation}
+      .symbol “
+      footer
+        small
+          | Someone famous in 
+          cite(title='Source Title') Source Title
